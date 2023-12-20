@@ -4,10 +4,29 @@
     gap: 16px;
 }
 
+/* Para tablets */
+@media screen and (max-width: 768px) {
+    .list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Para smartphones */
+@media screen and (max-width: 480px) {
+    .list {
+        grid-template-columns: 1fr;
+    }
+}
+
 .listItem {
     list-style: none;
     padding: 16px;
     border: 1px solid rgba(0,0,0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.listItem:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Adiciona uma sombra ao item da lista quando o mouse está sobre ele */
 }
 
 .itemName b, .itemLanguage b {
@@ -23,4 +42,12 @@
     margin-top: 8px;
     padding: 8px;
     text-decoration: none;
+    transition: background-color 0.5s ease;
 }
+
+
+.itemLink:hover {
+    background-color: #565252;
+    color: var(--corPrincipal);
+}
+

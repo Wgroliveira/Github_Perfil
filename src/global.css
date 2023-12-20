@@ -5,13 +5,23 @@
     font-family: sans-serif;
 }
 
+:root {
+    --corPrincipal: #f9ca24;
+    --corSecundaria: #111;
+}
+
 .container {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
 }
 
-:root {
-    --corPrincipal: #f9ca24;
-    --corSecundaria: #111;
-}
+
+
+
+
+
+
+
+
+   
